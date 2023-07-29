@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Temperature Converter</title>
+
+    <!-- ---------- External Css ---------  -->
+    <link rel="stylesheet" href="./style1.css">
+
+    <!-- ----------------- Google Font -----------  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500&display=swap" rel="stylesheet">
+
+</head>
+
+<body>
+    <div class="result-card">Anoop</div>
+    <div class="main-container">
+        <div class="container" id="unit-box">
+
+            <div class="col col-1">
+                <select name="" id="leftUnit" class="option" oninput="store()">
+                    <option value="--Select1--">--Select--</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Rankine">Rankine</option>
+                </select>
+                <input type="text" id="num1" placeholder="Enter Value">
+            </div>
+
+            <div class="col col-2">
+                &#11136;
+            </div>
+
+
+            <div class="col col-3">
+                <select name="" id="rightUnit" class="option" oninput="store()">
+                    <option value="--Select2--">--Select--</option>
+                    <option value="Fahrenheit">Fahrenheit</option>
+                    <option value="Celsius">Celsius</option>
+                    <option value="Kelvin">Kelvin</option>
+                    <option value="Rankine">Rankine</option>
+                </select>
+                <input type="text" id="num2" placeholder="Enter Value">
+            </div>
+
+        </div>
+
+        <div id="result"></div>
+
+        <div class="container" id="btn-container">
+            <button id="L2R">Left-2-Right</button>
+            <hr>
+            <button id="R2L">Right-2-Left</button>
+        </div>
+    </div>
+
+
+
+    <!-- ---------- Script ---------  -->
+    <script src="./script.js"></script>
+
+</body>
+
+</html>
